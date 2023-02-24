@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="formulario.css">
         <title>Formulário</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 
     <body>
         <header>
-            <h1>Formulário adote um amigo<img class="iconGiftDog" src="imgAnimais/dog.gif"></img></h1>
+            <h1>Formulário <span>adote um amigo</span><img class="iconGiftDog" src="imgAnimais/dog.gif"></img></h1>
             <nav class="menu">
                 <ul>
                     <li><a href="index.html">Animais para adoção</a></li>
@@ -37,35 +37,35 @@
             <form method="POST" action="https://getform.io/f/0fdfd509-9026-4c02-a662-5660b3cf3c12">
                 <h2>Formulário de adoção de animais</h2>
 
-                <div class="form-dados">
+                <fieldset class="dados">
                     <label for="nome"></label>
                     <input type="text" id="nome" name="nome" placeholder="Nome Completo:" required>
 
                     <label for="endereco"></label>
                     <input type="text" id="endereco" name="endereco" placeholder="Endereço completo:" required>
 
-                    <div class="telIdade">
+                    <fieldset class="telIdade">
                         <label for="telefone"></label>
                         <input type="tel" id="telefone" name="telefone" placeholder="Telefone:" required>
 
                         <label for="idade"></label>
                         <input type="number" id="idade" name="idade" placeholder="Idade:" required>
-                    </div>
+                    </fieldset>
 
                     <label for="email"></label>
                     <input type="email" id="email" name="email" placeholder="E-mail:" required>
-                </div>
+                </fieldset>
 
-                <div class="motivo-adocao">
+                <fieldset class="motivo-adocao">
                     <label for="motivo_adocao"></label>
                     <textarea id="motivo_adocao" name="motivo_adocao" maxlength="350" placeholder="Motivo da adoção:"
                         required></textarea>
-                </div>
+                </fieldset>
 
-                <fieldset>
+                <fieldset class="caracteristica">
                     <label>Escolha as características do animal que você procura:</label>
                     <select id="tipo_animal" name="tipo_animal" required>
-                        <option value="">Selecione o tipo de animal</option>
+                        <option value="tipo-animal">Selecione o tipo de animal</option>
                         <option value="cachorro">Cachorro</option>
                         <option value="gato">Gato</option>
                         <option value="outro">Pássaro</option>
@@ -74,8 +74,8 @@
                     </select>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Tempo disponível para se dedicar ao seu novo amigo por dia:</legend>
+                <fieldset class="tempo-disponivel">
+                    <legend>Tempo disponível <span>para se dedicar ao seu novo amigo por dia</span>:</legend>
                     <label>
                         <input type="radio" name="tempo" value="1h a 2h" required>
                         De 1 hora há 2 Horas.
@@ -90,11 +90,11 @@
                     </label>
                 </fieldset>
 
-                <div class="copia-email">
+                <fieldset class="copia-email">
                     <label for="form-copia">Quero receber uma copia do formulário por email</label>
                     <input type="checkbox" id="form-copia" name="form-copia" checked class="reset-checkbox-radio"
                         checked>
-                </div>
+                </fieldset>
                 <div class="botão">
                     <button type="submit">Enviar</button>
                 </div>
