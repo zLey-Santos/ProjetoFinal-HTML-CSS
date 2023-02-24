@@ -181,4 +181,14 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .animais p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        text-align: justify;
+        padding: 10px;
+        width: 350px;
+        height: 215px;
+        box-sizing: border-box;
+    }
 }

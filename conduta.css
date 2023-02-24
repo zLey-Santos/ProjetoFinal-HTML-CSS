@@ -97,15 +97,21 @@ main {
     font-weight: bold;
 }
 
-.conduta p {
-    text-align: justify;
-    font-size: 1em;
-}
-
 .conduta h1 {
     font-size: 32px;
     text-align: center;
     margin: 10px 0 25px;
+}
+
+.conduta p {
+    text-align: start;
+    font-size: 18px;
+}
+
+.conduta ol {
+    font-size: 18px;
+    text-align: start;
+    white-space: pre-line;
 }
 
 .condutaImg {
@@ -126,7 +132,7 @@ main {
 strong {
     color: rgb(165, 4, 4);
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 19px;
 }
 
 footer {
@@ -165,7 +171,20 @@ footer {
     }
 
     .conduta ol {
-        text-align: justify;
+        font-size: 18px;
+        text-align: start;
+        white-space: pre-line;
+    }
 
+    .conduta li strong {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .condutaImg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }

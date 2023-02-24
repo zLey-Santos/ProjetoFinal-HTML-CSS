@@ -85,16 +85,18 @@ main {
     font-size: 32px;
 }
 
-.form-dados {
+/* .form-dados {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: red; */
-    /* width: 95%; */
+    background-color: red; 
+     width: 95%; 
     padding: 10px;
-}
+} */
 
-form {
+/* formulário inicio  */
+
+/* form {
     display: flex;
     flex-direction: column;
     background-color: #CAECFF;
@@ -160,7 +162,7 @@ form textarea {
     border: none;
     resize: none;
     box-sizing: border-box;
-}
+} */
 
 footer {
     background-color: #333;
@@ -185,7 +187,7 @@ footer {
         font-size: 16px;
     }
 
-    form input {
+    /* form input {
         width: 97%;
         height: 2.5em;
         border-radius: 6px;
@@ -194,14 +196,14 @@ footer {
         padding: 10px;
         caret-color: #34e3a9b6;
         box-sizing: border-box;
-    }
+    } */
 
-    .telIdade #idade {
+    /* .telIdade #idade {
         max-width: 33%;
         margin-right: 24px;
-    }
+    } */
 
-    form textarea {
+    /* form textarea {
         border-radius: 10px;
         width: 95%;
         margin-left: 15px;
@@ -209,7 +211,7 @@ footer {
         border: none;
         resize: none;
         box-sizing: border-box;
-    }
+    } */
 }
 
 @media only screen and (max-width: 620px) {
@@ -222,7 +224,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    form input {
+    /* form input {
         width: 93%;
         height: 2.5em;
         border-radius: 6px;
@@ -231,14 +233,14 @@ footer {
         padding: 10px;
         caret-color: #34e3a9b6;
         box-sizing: border-box;
-    }
+    } */
 
-    .telIdade #idade {
+    /* .telIdade #idade {
         max-width: 33%;
         margin-right: 34px;
-    }
+    } */
 
-    form textarea {
+    /* form textarea {
         border-radius: 10px;
         width: 89%;
         margin-left: 15px;
@@ -246,5 +248,5 @@ footer {
         border: none;
         resize: none;
         box-sizing: border-box;
-    }
+    } */
 }

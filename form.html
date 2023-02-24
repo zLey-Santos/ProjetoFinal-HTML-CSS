@@ -20,7 +20,7 @@
             <h1>Formulário adote um amigo<img class="iconGiftDog" src="imgAnimais/dog.gif"></img></h1>
             <nav class="menu">
                 <ul>
-                    <li><a href="index.html">Animais para adoção</a></li>
+                    <li><a href="home.html">Animais para adoção</a></li>
                     <li><a href="conduta.html">Conduta de adoção</a></li>
                     <li><a href="form.html">Formulário de adoção</a></li>
                 </ul>
@@ -35,7 +35,7 @@
                     em situações de risco e encontrar lares amorosos para aqueles que precisam de um lar.</p>
             </section>
 
-            <form method="POST" action="https://getform.io/f/6ada92f4-522c-4542-b1f5-8b47dfde567d">
+            <form method="POST" action="https://getform.io/f/0fdfd509-9026-4c02-a662-5660b3cf3c12">
                 <h2>Formulário de adoção de animais</h2>
 
                 <div class="form-dados">
@@ -57,12 +57,11 @@
                     <input type="email" id="email" name="email" placeholder="E-mail:" required>
                 </div>
 
-                <label for="motivo_adocao"></label>
-                <textarea id="motivo_adocao" name="motivo_adocao" maxlength="350" placeholder="Motivo da adoção:"
-                    required></textarea>
-
-
-
+                <div class="motivo-adocao">
+                    <label for="motivo_adocao"></label>
+                    <textarea id="motivo_adocao" name="motivo_adocao" maxlength="350" placeholder="Motivo da adoção:"
+                        required></textarea>
+                </div>
 
                 <fieldset>
                     <label>Escolha as características do animal que você procura:</label>
@@ -75,52 +74,32 @@
                         <option value="outro">Outro</option>
                     </select>
                 </fieldset>
-                <ul>
-                    <li>
-                        <input type="checkbox" id="castrado" name="caracteristicas" value="castrado">
-                        <label for="castrado">Castrado</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="vacinado" name="caracteristicas" value="vacinado">
-                        <label for="vacinado">Vacinado</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="dócil" name="caracteristicas" value="dócil">
-                        <label for="dócil">Dócil</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="brincalhão" name="caracteristicas" value="brincalhão">
-                        <label for="brincalhão">Brincalhão</label>
-                    </li>
-
-                    <li>
-                        <input type="checkbox" id="brincalhão" name="caracteristicas" value="aquatico">
-                        <label for="brincalhão">Aquático</label>
-                    </li>
-
-                    <li>
-                        <input type="checkbox" id="brincalhão" name="caracteristicas" value="ave">
-                        <label for="brincalhão">Aves</label>
-                    </li>
-                </ul>
 
                 <fieldset>
                     <legend>Tempo disponível para se dedicar ao seu novo amigo por dia:</legend>
                     <label>
-                        <input type="radio" name="tempo" value="1h" required>
+                        <input type="radio" name="tempo" value="1h a 2h" required>
                         De 1 hora há 2 Horas.
                     </label>
                     <label>
-                        <input type="radio" name="tempo" value="2h" required>
+                        <input type="radio" name="tempo" value="2h a 3h" required>
                         De 2 horas há 3 horas.
                     </label>
                     <label>
-                        <input type="radio" name="tempo" value="3h" required>
+                        <input type="radio" name="tempo" value="3h ou mais" required>
                         3 horas ou mais.
                     </label>
                 </fieldset>
 
-                <button type="submit">Enviar</button>
+                <div class="copia-email">
+                    <label for="form-copia">Quero receber uma copia do formulário por email</label>
+                    <input type="checkbox" id="form-copia" name="form-copia" checked class="reset-checkbox-radio"
+                        checked>
+                </div>
+                <div class="botão">
+                    <button type="submit">Enviar</button>
+                </div>
+
             </form>
         </main>
 
