@@ -40,7 +40,8 @@
 
                 <fieldset class="dados">
                     <label for="nome"></label>
-                    <input type="text" id="nome" name="nome" placeholder="Nome Completo:" required>
+                    <input type="text" id="nome" name="nome" placeholder="Nome Completo:" required minlength="4"
+                        maxlength="16">
 
                     <label for="endereco"></label>
                     <input type="text" id="endereco" name="endereco" placeholder="Endereço completo:" required>
@@ -59,8 +60,8 @@
 
                 <fieldset class="motivo-adocao">
                     <label for="motivo_adocao"></label>
-                    <textarea id="motivo_adocao" name="motivo_adocao" maxlength="350" placeholder="Motivo da adoção:"
-                        required></textarea>
+                    <textarea id="motivo_adocao" name="motivo_adocao" minlength="16" maxlength="350"
+                        placeholder="Motivo da adoção:" required></textarea>
                 </fieldset>
 
                 <fieldset class="caracteristica">
