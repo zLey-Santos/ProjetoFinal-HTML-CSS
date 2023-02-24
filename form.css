@@ -1,0 +1,250 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+/* inicio do estilo header */
+header {
+    text-align: center;
+    background-color: #CAECFF;
+}
+
+header h1 {
+    margin: 10px 0 10px 0;
+    padding: 0.1em;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.menu li {
+    flex: 0.1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 3px;
+    background-color: #CAECFF;
+}
+
+.menu ul li a:hover {
+    border: 1px solid #CAECFF;
+    color: rgb(59, 59, 59);
+    background-color: #34E3A9;
+}
+
+.iconGiftDog {
+    width: 65px;
+    height: 55px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.sobreNos {
+    background-color: #34e3a9b6;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 3px #34E3A9;
+}
+
+.sobreNos p {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+.sobreNos h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.form-dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    /* width: 95%; */
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #CAECFF;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+form h2 {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Dosis', sans-serif;
+}
+
+form input {
+    width: 99%;
+    height: 2.5em;
+    border-radius: 6px;
+    margin: 5px;
+    border: none;
+    padding: 10px;
+    caret-color: #34e3a9b6;
+    box-sizing: border-box;
+}
+
+form input::placeholder {
+    padding: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black
+}
+
+.telIdade {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 15px;
+
+}
+
+.telIdade #idade {
+    max-width: 25%;
+    margin-right: 30px;
+}
+
+.telIdade #telefone {
+    max-width: 75%;
+    margin-left: -10px;
+}
+
+.telIdade #idade::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+form textarea {
+    border-radius: 10px;
+    width: 98%;
+    margin-left: 15px;
+    height: 10em;
+    border: none;
+    resize: none;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    margin: 15px 0 0 0;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 920px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header .menu ul li a {
+        width: 55%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+        white-space: nowrap;
+        font-size: 16px;
+    }
+
+    form input {
+        width: 97%;
+        height: 2.5em;
+        border-radius: 6px;
+        margin: 5px;
+        border: none;
+        padding: 10px;
+        caret-color: #34e3a9b6;
+        box-sizing: border-box;
+    }
+
+    .telIdade #idade {
+        max-width: 33%;
+        margin-right: 24px;
+    }
+
+    form textarea {
+        border-radius: 10px;
+        width: 95%;
+        margin-left: 15px;
+        height: 5em;
+        border: none;
+        resize: none;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header .menu ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    form input {
+        width: 93%;
+        height: 2.5em;
+        border-radius: 6px;
+        margin: 5px;
+        border: none;
+        padding: 10px;
+        caret-color: #34e3a9b6;
+        box-sizing: border-box;
+    }
+
+    .telIdade #idade {
+        max-width: 33%;
+        margin-right: 34px;
+    }
+
+    form textarea {
+        border-radius: 10px;
+        width: 89%;
+        margin-left: 15px;
+        height: 5em;
+        border: none;
+        resize: none;
+        box-sizing: border-box;
+    }
+}

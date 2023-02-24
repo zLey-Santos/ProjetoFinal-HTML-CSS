@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="form.css">
+        <title>Formulário</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Formulário adote um amigo<img class="iconGiftDog" src="imgAnimais/dog.gif"></img></h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Animais para adoção</a></li>
+                    <li><a href="conduta.html">Conduta de adoção</a></li>
+                    <li><a href="form.html">Formulário de adoção</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+
+            <section class="sobreNos">
+                <h2><span>&#128054;</span> Sobre nós <span>&#128008;</span></h2>
+                <p>Bem-vindo ao nosso site de doação de animais! Nós somos uma plataforma dedicada a ajudar animais
+                    em situações de risco e encontrar lares amorosos para aqueles que precisam de um lar.</p>
+            </section>
+
+            <form method="POST" action="https://getform.io/f/6ada92f4-522c-4542-b1f5-8b47dfde567d">
+                <h2>Formulário de adoção de animais</h2>
+
+                <div class="form-dados">
+                    <label for="nome"></label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome Completo:" required>
+
+                    <label for="endereco"></label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Endereço completo:" required>
+
+                    <div class="telIdade">
+                        <label for="telefone"></label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone:" required>
+
+                        <label for="idade"></label>
+                        <input type="number" id="idade" name="idade" placeholder="Idade:" required>
+                    </div>
+
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="E-mail:" required>
+                </div>
+
+                <label for="motivo_adocao"></label>
+                <textarea id="motivo_adocao" name="motivo_adocao" maxlength="350" placeholder="Motivo da adoção:"
+                    required></textarea>
+
+
+
+
+                <fieldset>
+                    <label>Escolha as características do animal que você procura:</label>
+                    <select id="tipo_animal" name="tipo_animal" required>
+                        <option value="">Selecione o tipo de animal</option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gato">Gato</option>
+                        <option value="outro">Pássaro</option>
+                        <option value="outro">Peixe</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </fieldset>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="castrado" name="caracteristicas" value="castrado">
+                        <label for="castrado">Castrado</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="vacinado" name="caracteristicas" value="vacinado">
+                        <label for="vacinado">Vacinado</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="dócil" name="caracteristicas" value="dócil">
+                        <label for="dócil">Dócil</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="brincalhão" name="caracteristicas" value="brincalhão">
+                        <label for="brincalhão">Brincalhão</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="brincalhão" name="caracteristicas" value="aquatico">
+                        <label for="brincalhão">Aquático</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="brincalhão" name="caracteristicas" value="ave">
+                        <label for="brincalhão">Aves</label>
+                    </li>
+                </ul>
+
+                <fieldset>
+                    <legend>Tempo disponível para se dedicar ao seu novo amigo por dia:</legend>
+                    <label>
+                        <input type="radio" name="tempo" value="1h" required>
+                        De 1 hora há 2 Horas.
+                    </label>
+                    <label>
+                        <input type="radio" name="tempo" value="2h" required>
+                        De 2 horas há 3 horas.
+                    </label>
+                    <label>
+                        <input type="radio" name="tempo" value="3h" required>
+                        3 horas ou mais.
+                    </label>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+
+        <footer>
+            <p> © 2023 Adote um animal. Faça o bem!</p>
+        </footer>
+
+    </body>
+
+</html>
