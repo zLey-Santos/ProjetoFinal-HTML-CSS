@@ -92,6 +92,7 @@ main {
 
 form {
     width: 100%;
+    height: auto;
     margin: 0 auto;
     padding: 20px;
     background-color: #CAECFF;
@@ -126,7 +127,7 @@ h2 {
 
 textarea::placeholder, input::placeholder {
     color: #333;
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -153,9 +154,11 @@ textarea::placeholder, input::placeholder {
     padding: 10px;
     border-radius: 5px;
     border: none;
-    margin: 12px 0px 12px 0px;
+    margin: 12px 0;
     font-size: 1rem;
     box-sizing: border-box;
+    color: #333;
+    font-weight: bold;
 }
 
 .tempo-disponivel label {
@@ -217,7 +220,7 @@ footer {
 
 @media only screen and (max-width: 620px) {
     header h1 {
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     header h1 span {
@@ -240,6 +243,14 @@ footer {
     }
 
     legend span {
+        text-transform: uppercase;
+        font-weight: bold;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    span {
         text-transform: uppercase;
         font-weight: bold;
         display: none;
