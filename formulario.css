@@ -39,7 +39,7 @@ header h1 {
 }
 
 
-.menu ul li a {
+.menu-nav {
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -50,13 +50,13 @@ header h1 {
     background-color: #CAECFF;
 }
 
-.menu ul li a:hover {
+.menu-nav:hover {
     border: 1px solid #CAECFF;
     color: rgb(59, 59, 59);
     background-color: #34E3A9;
 }
 
-.iconGiftDog {
+.icon-gift-dog {
     width: 65px;
     height: 55px;
 }
@@ -71,7 +71,7 @@ main {
     padding: 10px;
 }
 
-.sobreNos {
+.sobre-nos {
     background-color: #34e3a9b6;
     padding: 10px;
     margin: 10px 0px 20px 0px;
@@ -79,13 +79,13 @@ main {
     box-shadow: 0px 0px 5px 3px #34E3A9;
 }
 
-.sobreNos p {
+.sobre-nos p {
     font-size: 18px;
     font-weight: bolder;
     text-align: justify;
 }
 
-.sobreNos h2 {
+.sobre-nos h2 {
     text-align: center;
     font-size: 32px;
 }
@@ -132,13 +132,13 @@ textarea::placeholder, input::placeholder {
     text-transform: uppercase;
 }
 
-.telIdade label {
+.tel-idade label {
     display: inline-block;
     width: 48%;
     margin-bottom: 10px;
 }
 
-.telIdade input {
+.tel-idade input {
     width: 100%;
 }
 
@@ -167,7 +167,7 @@ textarea::placeholder, input::placeholder {
     margin-bottom: 5px;
 }
 
-.tempo-disponivel label input {
+.tempo-disponivel input {
     margin-right: 5px;
 }
 
@@ -223,17 +223,17 @@ footer {
         font-size: 3em;
     }
 
-    header h1 span {
+    .display-none {
         display: none;
         text-align: center;
     }
 
-    header .menu ul {
+    .menu ul {
         display: flex;
         flex-wrap: wrap;
     }
 
-    header .menu ul li a {
+    .menu-nav {
         width: 100%;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -254,7 +254,7 @@ footer {
 }
 
 @media only screen and (max-width: 770px) {
-    header h1 span {
+    .display-none {
         display: none;
     }
 }
